@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Govind vishwa</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Lumanosimo&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Lumanosimo&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    .navbar {
+        background-color: #242424;
+        color: white;
+        display: flex;
+        padding: 15px 16px;
+        font-family: 'Belanosima', sans-serif;
+    }
+
+    .navbar img {
+        transition: all 1.5s ease-in-out;
+    }
+
+    .navbar img:hover {
+        cursor: pointer;
+        transform: rotate(180deg);
+    }
+
+    .navbar h2 {
+        margin: 0 9px;
+    }
+
+    .section1 {
+        background: radial-gradient(#2f3640 15%, transparent 16%) 0 0, radial-gradient(#2f3640 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+        background-color: #353b48;
+        background-size: 16px 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 3px black;
+        width: 100%;
+        height: 100vh;
+    }
+
+    @media screen and (max-width: 400px) {
+        .section1 {
+            height: 100%;
+        }
+    }
+
+    .heading {
+        color: #b3b395;
+        font-family: 'Lumanosimo', cursive;
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    .logo1 {
+        height: 45px;
+        margin: 20px 28px;
+    }
+
+    .logo1:hover {
+        transform: scale(1.5);
+    }
+
+    .hide {
+        height: 404px;
+        width: 404px;
+        background-color: #999999;
+        border-radius: 50%;
+        position: absolute;
+        display: none;
+
+    }
+
+    .hide ul {
+        text-align: center;
+        list-style: none;
+        font-size: 3.4rem;
+        margin: 114px auto;
+    }
+
+    .hide ul li a {
+        text-decoration: none;
+        color: black;
+        transition: all;
+    }
+
+    .hide ul li a:hover {
+        text-decoration: underline;
+        transform: scale(1.5);
+    }
+
+    .myskill {
+        height: 100%;
+        background: url(florian-olivo-4hbJ-eymZ1o-unsplash\ \(1\).jpg) no-repeat center center/cover;
+    }
+
+    .bg h1 {
+        color: white;
+        font-size: 2.8rem;
+        text-shadow: 1px 3px 12px #1e1ee7;
+        padding: 10px 29px;
+    }
+
+    @media screen and (max-width: 500px) {
+        .bg h1 {
+            text-align: center;
+        }
+    }
+
+    .item {
+        /* border: 2px solid red; */
+        display: inline-block;
+        margin: 41px 58px;
+    }
+
+    @media screen and (max-width:500px) {
+        .item {
+            /* margin: 42px auto; */
+        }
+
+    }
+
+    .item1 {
+        margin-top: 16px;
+        height: 170px;
+        width: 145px;
+        filter: drop-shadow(2px 0px 7px white);
+    }
+
+    .item1:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+    .item p {
+        text-align: center;
+        color: white;
+        font-size: 1.7rem;
+    }
+
+    .section3 {
+        background-color: #2f3640;
+    }
+
+    .section3 h1 {
+        padding: 3rem;
+        font-size: 2.5rem;
+        color: #86919b;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+    }
+
+    .project {
+        border: 2px solid #b5a7a7;
+        display: inline-block;
+        height: 288px;
+        width: 308px;
+        margin: 8px 6px;
+        background-color: #313636;
+    }
+
+    .project h2 {
+        text-align: center;
+        color: #d3c2c2;
+        margin-top: 17px;
+        font-size: 1.8rem;
+    }
+
+    .project p {
+        margin: 18px 28px;
+        font-size: 1.5rem;
+        color: red;
+    }
+
+    .project p span {
+        color: rgb(104, 104, 134);
+    }
+
+    .project .sp {
+        color: yellow;
+    }
+
+    .project .para {
+        color: white;
+        margin: 20px 15px;
+    }
+
+    .project a {
+        width: 100%;
+        display: grid;
+        font-size: 2.3rem;
+        text-decoration: none;
+    }
+
+    .project a span {
+        border: 1px solid #563d7c;
+        text-align: center;
+        border-radius: 25px;
+    }
+
+    .project a span:hover {
+
+        color: #563d7c;
+        justify-content: center;
+        border: 1px solid #563d7c;
+        background-image: linear-gradient(315deg, #563d7c 50%, #242931 50%);
+        background-size: 250% 100%;
+        background-position: left top;
+        transition: all 0.5s ease-in-out;
+
+    }
+
+    .footer .copyright {
+        padding: 2rem;
+        color: #838f95;
+        font-size: 1.5rem;
+        width: 100%;
+        height: 100%;
+        background-color: #121314;
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <img class="img" id="img1" onclick="hiding()" src="menu.svg" alt="Menu">
+        <h2 class="head">Govind Portfolio</h2>
+    </nav>
+    <section class="section1">
+        <div class="heading">
+            <h2>Hi, I'm Govind Vishwakarma. <br>
+                <span>I'm a web developer.</span>
+            </h2>
+        </div>
+        <div class="logos">
+            <a href="https://www.gmail.com" target="_blank"><img src="mail.svg" alt="" class="logo1"></a>
+            <a href="https://github.com/govind3498" target="_blank"><img src="github.svg" alt="" class="logo1"></a>
+            <a href="https://www.linkedin.com " target="_blank"><img src="linkedin.svg" alt="" class="logo1"></a>
+        </div>
+        <div id="home" class="hide">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skill</a></li>
+                <li><a href="#">About Me</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="myskill">
+        <div class="bg">
+            <h1>My Skill</h1>
+        </div>
+        <div class="item">
+            <img class="item1" src="cdnlogo.com_html.svg" alt="" height="100px" width="100px">
+            <p>HTML</p>
+        </div>
+        <div class="item">
+            <img class="item1" src="PngItem_1985012.png" alt="" height="100px" width="100px">
+            <p>CSS</p>
+        </div>
+        <div class="item">
+            <img class="item1" src="javascript-39397.png" alt="" height="100px" width="100px">
+            <p>JavaScript</p>
+        </div>
+        <div class="item">
+            <img class="item1" src="nodelogo.png" alt="" height="100px" width="100px">
+            <p>NodeJs</p>
+        </div>
+        <div class="item">
+            <img class="item1" src="mongodb.png" alt="" height="100px" width="100px">
+            <p>MongoDb</p>
+        </div>
+    </section>
+
+    <section class="section3">
+        <h1>My Projects</h1>
+        <div class="card">
+            <div class="project">
+                <h2>Library Manegament</h2>
+                <p> HTML
+                    <span>~CSS</span>
+                    <span class="sp">~JavaScript</span>
+                </p>
+                <p class="para">A website I created using the Elementor plugin within JavaScript.</p>
+                <a href="https://dawahacademy.uk">
+                    <span>Project</span>
+                </a>
+            </div>
+            <div class="project">
+                <h2>Library Manegament</h2>
+                <p> HTML
+                    <span>~CSS</span>
+                    <span class="sp">~JavaScript</span>
+                </p>
+                <p class="para">A website I created using the Elementor plugin within JavaScript.</p>
+                <a href="https://dawahacademy.uk">
+                    <span>Project</span>
+                </a>
+            </div>
+            <div class="project">
+                <h2>Library Manegament</h2>
+                <p> HTML
+                    <span>~CSS</span>
+                    <span class="sp">~JavaScript</span>
+                </p>
+                <p class="para">A website I created using the Elementor plugin within JavaScript.</p>
+                <a href="https://dawahacademy.uk">
+                    <span>Project</span>
+                </a>
+            </div>
+            <div class="project">
+                <h2>Library Manegament</h2>
+                <p> HTML
+                    <span>~CSS</span>
+                    <span class="sp">~JavaScript</span>
+                </p>
+                <p class="para">A website I created using the Elementor plugin within JavaScript.</p>
+                <a href="https://dawahacademy.uk">
+                    <span>Project</span>
+                </a>
+            </div>
+            <div class="project">
+                <h2>Library Manegament</h2>
+                <p> HTML
+                    <span>~CSS</span>
+                    <span class="sp">~JavaScript</span>
+                </p>
+                <p class="para">A website I created using the Elementor plugin within JavaScript.</p>
+                <a href="https://dawahacademy.uk">
+                    <span>Project</span>
+                </a>
+            </div>
+            <div class="project">
+                <h2>Library Manegament</h2>
+                <p> HTML
+                    <span>~CSS</span>
+                    <span class="sp">~JavaScript</span>
+                </p>
+                <p class="para">A website I created using the Elementor plugin within JavaScript.</p>
+                <a href="https://dawahacademy.uk">
+                    <span>Project</span>
+                </a>
+            </div>
+            <div class="project">
+                <h2>Library Manegament</h2>
+                <p> HTML
+                    <span>~CSS</span>
+                    <span class="sp">~JavaScript</span>
+                </p>
+                <p class="para">A website I created using the Elementor plugin within JavaScript.</p>
+                <a href="https://dawahacademy.uk">
+                    <span>Project</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="copyright">
+            © 2023 <a href="https://github.com/govind3498">Govind Vishwa</a>
+        </div>
+    </footer>
+    <script>
+        function hiding() {
+            let img1 = document.getElementById('img1');
+            let home = document.getElementById('home');
+            if (home.style.display != 'none') {
+                home.style.display = 'none';
+            }
+            else {
+                home.style.display = 'block';
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
